@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* open san */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* mostarret */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* fredoka */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background:#2A2C41; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+
+
+html,body{
+  /* cursor: url("../../public/assets/cursor-fill.svg") 16 16, pointer; */
+  /* font-family: "Mulish", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Fredoka", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Rubik", sans-serif;
+  /* font-family: "Lora", serif; */ 
+  /* cursor: url('../../public/assets/logo.png'), auto;
+   */
+  /* cursor: url("https://www.svgrepo.com/show/5154/hand-pointer.svg"), auto; */
+}
+/* html,body{
+ 
+
+  cursor: url('../../public/assets/logo.png'), auto;
+  cursor: url("https://www.svgrepo.com/show/5154/hand-pointer.svg"), auto;
+} */
+
+.container-wrapper{
+  margin: auto;
+  min-width: 320px;
+}
+
+
+@media screen and (max-width:639px) {
+  .container-wrapper {
+      width: calc(100% - 35px) !important;
+      /* padding: 0 20px; */
+      /* background-color: red !important; */
+      /* padding:0 540px !important; */
+
+  }
+}
+@media screen and (min-width:640px) {
+  .container-wrapper {
+      width: 600px !important;
+      /* background-color: red !important; */
+      /* padding:0 540px !important; */
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-wrapper {
+      width: 750px !important;
+      /* background-color: red !important; */
+      /* padding:0 540px !important; */
+
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container-wrapper {
+      width: 950px !important;
+      /* background-color: green !important; */
+      /* padding:0 20px !important; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-wrapper {
+      width: 1200px !important;
+      /* background-color: blue !important; */
+      /* padding:0 20px !important; */
+  }
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
